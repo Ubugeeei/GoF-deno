@@ -35,7 +35,7 @@
 * [ ] Mix In Pattern
 ---
 * [ ] MVC
-* [ ] MVP
+* [ ] MVPw
 * [ ] MVVM
 
 ## Usage

@@ -12,6 +12,9 @@ const config: DenonConfig = {
     "constructor:prototype_constructor": {
       cmd: "deno run src/constructor_pattern/prototype_constructor/example.js",
     },
+    "prototype": {
+      cmd: "deno run src/prototype_pattern/example.ts",
+    }
   },
 };
 
