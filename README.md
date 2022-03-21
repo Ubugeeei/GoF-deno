@@ -19,3 +19,22 @@
 - [ ]  MVC
 - [ ]  MVP
 - [ ]  MVVM
+
+## Usage
+deno installation  
+https://deno.land/#installation  
+```sh
+$ brew install deno
+```
+  
+install denon v2.5.0  
+https://deno.land/x/denon@2.5.0
+```sh
+$ deno install -qAf --unstable https://deno.land/x/denon/denon.ts
+```
+
+start sample
+```sh
+$ denon hello
+```
+show scripts.config.ts for running some implements of design pattern example.
