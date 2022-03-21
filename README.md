@@ -1,6 +1,6 @@
 ## My Scratch Implement of design pattern on deno
 ※ Additional implementations as needed
-- [ ]  Constructor Pattern
+- [x]  Constructor Pattern
 - [ ]  Module Pattern
 - [ ]  Revealing Module Pattern
 - [ ]  Singleton Pattern
