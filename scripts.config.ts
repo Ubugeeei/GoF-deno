@@ -8,7 +8,10 @@ const config: DenonConfig = {
     },
     "constructor:constructor_function": {
       cmd: "deno run src/constructor_pattern/constructor_function/example.js",
-    }
+    },
+    "constructor:prototype_constructor": {
+      cmd: "deno run src/constructor_pattern/prototype_constructor/example.js",
+    },
   },
 };
 
