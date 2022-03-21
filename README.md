@@ -4,10 +4,10 @@
 
 * [ ] Abstract Factory Pattern
 * [x] Constructor Pattern
-* [ ] Prototype Pattern
 * [ ] Builder Pattern
 * [ ] Factory Pattern
 * [ ] Factory Method Pattern
+* [x] Prototype Pattern
 * [ ] Singleton Pattern
 ---
 * [ ] Adapter Pattern
