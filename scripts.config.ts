@@ -6,6 +6,9 @@ const config: DenonConfig = {
       cmd: "deno run hello_deno.ts",
       "allow": ["run"]
     },
+    "constructor:constructor_function": {
+      cmd: "deno run src/constructor_pattern/constructor_function/example.js",
+    }
   },
 };
 
