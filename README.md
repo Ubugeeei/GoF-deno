@@ -2,7 +2,7 @@
 
 ※ Additional implementations as needed
 
-* [ ] Abstract Factory Pattern
+* [x] Abstract Factory Pattern
 * [x] Constructor Pattern
 * [ ] Builder Pattern
 * [ ] Factory Pattern
