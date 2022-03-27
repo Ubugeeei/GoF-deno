@@ -22,25 +22,25 @@ class PrototypePatternClass {
 	}
 }
 
-// usage
-const instance = new PrototypePatternClass("John", 30, [
-	"todo1",
-	"todo2",
-]);
+(function main() {
+	const instance = new PrototypePatternClass("John", 30, [
+		"todo1",
+		"todo2",
+	]);
 
-const instance2 = instance.clone();
-instance2.addTodo("todo3");
+	const instance2 = instance.clone();
+	instance2.addTodo("todo3");
 
-const instance3 = instance.clone();
+	const instance3 = instance.clone();
 
-console.table({ instance, instance2, instance3 });
-
-/*
-┌───────────┬────────┬─────┬───────────────────────────────┐
-│ (idx)      │ name    │ age │ todos                            │
-├───────────┼────────┼─────┼───────────────────────────────┤
-│ instance   │ "John"  │  30 │ [ "todo1", "todo2" ]             │
-│ instance2  │ "John"  │  30 │ [ "todo1", "todo2", "todo3" ]    │
-│ instance3  │ "John"  │  30 │ [ "todo1", "todo2" ]             │
-└───────────┴────────┴─────┴───────────────────────────────┘
-*/
+	console.table({ instance, instance2, instance3 });
+	/*
+	┌───────────┬────────┬─────┬───────────────────────────────┐
+	│ (idx)      │ name    │ age │ todos                            │
+	├───────────┼────────┼─────┼───────────────────────────────┤
+	│ instance   │ "John"  │  30 │ [ "todo1", "todo2" ]             │
+	│ instance2  │ "John"  │  30 │ [ "todo1", "todo2", "todo3" ]    │
+	│ instance3  │ "John"  │  30 │ [ "todo1", "todo2" ]             │
+	└───────────┴────────┴─────┴───────────────────────────────┘
+	*/
+})();
