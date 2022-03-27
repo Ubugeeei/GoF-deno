@@ -33,32 +33,32 @@ abstract class AbstractFactory {
   abstract createProductB(): AbstractProductA;
 }
 
-class NewYorkFactory extends AbstractFactory {
+class FactoryA extends AbstractFactory {
   createProductA(): ProductA {
-    return new ProductA('ProductA made in New York');
+    return new ProductA('ProductA made in FactoryA');
   }
 
   createProductB(): ProductB {
-    return new ProductB('ProductB made in New York');
+    return new ProductB('ProductB made in FactoryA');
   }
 }
 
-class CaliforniaFactory extends AbstractFactory {
+class FactoryB extends AbstractFactory {
   createProductA(): ProductA {
-    return new ProductA('ProductA made in California');
+    return new ProductA('ProductA made in FactoryB');
   }
 
   createProductB(): ProductB {
-    return new ProductB('ProductB made in California');
+    return new ProductB('ProductB made in FactoryB');
   }
 }
 
 (function main() {
-  const nyFactory = new NewYorkFactory();
-  nyFactory.createProductA();
-  nyFactory.createProductB();
+  const factoryA = new FactoryA();
+  factoryA.createProductA();
+  factoryA.createProductB();
 
-  const calFactory = new CaliforniaFactory();
-  calFactory.createProductA();
-  calFactory.createProductB();
+  const factoryB = new FactoryB();
+  factoryB.createProductA();
+  factoryB.createProductB();
 })();
