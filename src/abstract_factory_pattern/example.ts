@@ -1,64 +1,92 @@
 abstract class AbstractProductA {
-  abstract methodA(): void;
-  abstract methodB(): void;
+	abstract methodA(): void;
+	abstract methodB(): void;
 }
 
 abstract class AbstractProductB {
-  abstract methodA(): void;
-  abstract methodB(): void;
+	abstract methodA(): void;
+	abstract methodB(): void;
 }
 
 class ProductA extends AbstractProductA {
-  constructor(value: string) {
-    super();
-    console.log(value);
-  }
+	value!: string;
+	constructor(value: string) {
+		super();
+		this.value = value;
+	}
 
-  methodA(): void {}
-  methodB(): void {}
+	methodA(): void {}
+	methodB(): void {}
 }
 
 class ProductB extends AbstractProductB {
-  constructor(value: string) {
-    super();
-    console.log(value);
-  }
+	value!: string;
+	constructor(value: string) {
+		super();
+		this.value = value;
+	}
 
-  methodA(): void {}
-  methodB(): void {}
+	methodA(): void {}
+	methodB(): void {}
 }
 
 abstract class AbstractFactory {
-  abstract createProductA(): AbstractProductA;
-  abstract createProductB(): AbstractProductA;
+	abstract createProductA(): AbstractProductA;
+	abstract createProductB(): AbstractProductA;
 }
 
 class FactoryA extends AbstractFactory {
-  createProductA(): ProductA {
-    return new ProductA('ProductA made in FactoryA');
-  }
+	createProductA(): ProductA {
+		return new ProductA("ProductA made in FactoryA");
+	}
 
-  createProductB(): ProductB {
-    return new ProductB('ProductB made in FactoryA');
-  }
+	createProductB(): ProductB {
+		return new ProductB("ProductB made in FactoryA");
+	}
 }
 
 class FactoryB extends AbstractFactory {
-  createProductA(): ProductA {
-    return new ProductA('ProductA made in FactoryB');
-  }
+	createProductA(): ProductA {
+		return new ProductA("ProductA made in FactoryB");
+	}
 
-  createProductB(): ProductB {
-    return new ProductB('ProductB made in FactoryB');
-  }
+	createProductB(): ProductB {
+		return new ProductB("ProductB made in FactoryB");
+	}
 }
 
 (function main() {
-  const factoryA = new FactoryA();
-  factoryA.createProductA();
-  factoryA.createProductB();
+	class A {
+		productA!: ProductA;
+		productB!: ProductB;
+		constructor() {}
+		setA(productA: ProductA): void {
+			this.productA = productA;
+		}
+		setB(productB: ProductB): void {
+			this.productB = productB;
+		}
+	}
+	const a = new A();
+	const factoryA = new FactoryA();
+	a.setA(factoryA.createProductA());
+	a.setB(factoryA.createProductB());
+	console.log("🚀 ~ file: example.ts ~ line 74 ~ main ~ a", a);
 
-  const factoryB = new FactoryB();
-  factoryB.createProductA();
-  factoryB.createProductB();
+	class B {
+		productA!: ProductA;
+		productB!: ProductB;
+		setA(productA: ProductA): void {
+			this.productA = productA;
+		}
+		setB(productB: ProductB): void {
+			this.productB = productB;
+		}
+		constructor() {}
+	}
+	const b = new B();
+	const factoryB = new FactoryB();
+	b.setA(factoryB.createProductA());
+	b.setB(factoryB.createProductB());
+	console.log("🚀 ~ file: example.ts ~ line 91 ~ main ~ b", b);
 })();
