@@ -17,6 +17,9 @@ const config: DenonConfig = {
     },
     "abstract_factory": {
       cmd: "deno run src/abstract_factory_pattern/example.ts",
+    },
+    "builder": {
+      cmd: "deno run src/builder_pattern/example.ts",
     }
   },
 };
