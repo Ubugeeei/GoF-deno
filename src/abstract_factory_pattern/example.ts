@@ -1,46 +1,64 @@
-class Employee {
-	name: string;
-	constructor(name: string) {
-		this.name = name;
-	}
-
-	say() {
-		console.log("I am employee " + this.name);
-	}
+abstract class AbstractProductA {
+  abstract methodA(): void;
+  abstract methodB(): void;
 }
 
-class EmployeeFactory {
-	create(name: string) {
-		return new Employee(name);
-	}
+abstract class AbstractProductB {
+  abstract methodA(): void;
+  abstract methodB(): void;
 }
 
-class Vendor {
-	name: string;
-	constructor(name: string) {
-		this.name = name;
-	}
+class ProductA extends AbstractProductA {
+  constructor(value: string) {
+    super();
+    console.log(value);
+  }
 
-	say() {
-		console.log("I am vendor " + this.name);
-	}
+  methodA(): void {}
+  methodB(): void {}
 }
 
-class VendorFactory {
-	create(name: string) {
-		return new Vendor(name);
-	}
+class ProductB extends AbstractProductB {
+  constructor(value: string) {
+    super();
+    console.log(value);
+  }
+
+  methodA(): void {}
+  methodB(): void {}
 }
 
-const persons = [];
-const employeeFactory = new EmployeeFactory();
-const vendorFactory = new VendorFactory();
-persons.push(employeeFactory.create("Joan DiSilva"));
-persons.push(employeeFactory.create("Tim O'Neill"));
-persons.push(vendorFactory.create("Gerald Watson"));
-persons.push(vendorFactory.create("Nicole McNight"));
+abstract class AbstractFactory {
+  abstract createProductA(): AbstractProductA;
+  abstract createProductB(): AbstractProductA;
+}
 
-console.log(persons);
-persons.forEach((person) => {
-	person.say();
-});
+class NewYorkFactory extends AbstractFactory {
+  createProductA(): ProductA {
+    return new ProductA('ProductA made in New York');
+  }
+
+  createProductB(): ProductB {
+    return new ProductB('ProductB made in New York');
+  }
+}
+
+class CaliforniaFactory extends AbstractFactory {
+  createProductA(): ProductA {
+    return new ProductA('ProductA made in California');
+  }
+
+  createProductB(): ProductB {
+    return new ProductB('ProductB made in California');
+  }
+}
+
+(function main() {
+  const nyFactory = new NewYorkFactory();
+  nyFactory.createProductA();
+  nyFactory.createProductB();
+
+  const calFactory = new CaliforniaFactory();
+  calFactory.createProductA();
+  calFactory.createProductB();
+})();
