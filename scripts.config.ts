@@ -27,6 +27,9 @@ const config: DenonConfig = {
     "factory_method": {
       cmd: "deno run --allow-read src/factory_method_pattern/example.ts",
     },
+    "singleton": {
+      cmd: "deno run src/singleton_pattern/example.ts",
+    },
   },
 };
 
