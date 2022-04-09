@@ -20,7 +20,10 @@ const config: DenonConfig = {
     },
     "builder": {
       cmd: "deno run src/builder_pattern/example.ts",
-    }
+    },
+    "factory": {
+      cmd: "deno run src/factory_pattern/example.ts",
+    },
   },
 };
 
