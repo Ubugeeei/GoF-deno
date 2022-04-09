@@ -6,7 +6,7 @@
 * [x] Constructor Pattern
 * [x] Builder Pattern
 * [x] Factory Pattern
-* [ ] Factory Method Pattern
+* [x] Factory Method Pattern
 * [x] Prototype Pattern
 * [ ] Singleton Pattern
 ---
