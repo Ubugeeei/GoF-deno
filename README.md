@@ -2,41 +2,49 @@
 
 ※ Additional implementations as needed
 
-* [x] Abstract Factory Pattern
-* [x] Constructor Pattern
-* [x] Builder Pattern
-* [x] Factory Pattern
-* [x] Factory Method Pattern
-* [x] Prototype Pattern
-* [ ] Singleton Pattern
+- [x] Abstract Factory Pattern
+- [x] Constructor Pattern
+- [x] Builder Pattern
+- [x] Factory Pattern
+- [x] Factory Method Pattern
+- [x] Prototype Pattern
+- [x] Singleton Pattern
+
 ---
-* [ ] Adapter Pattern
-* [ ] Bridge Pattern
-* [ ] Composite Pattern
-* [ ] Decorator Pattern
-* [ ] Facade Pattern
-* [ ] Flyweight Pattern
-* [ ] Proxy Pattern
+
+- [ ] Adapter Pattern
+- [ ] Bridge Pattern
+- [ ] Composite Pattern
+- [ ] Decorator Pattern
+- [ ] Facade Pattern
+- [ ] Flyweight Pattern
+- [ ] Proxy Pattern
+
 ---
-* [ ] Chain of Responsibility Pattern
-* [ ] Command Pattern
-* [ ] Interpreter Pattern
-* [ ] Iterator Pattern
-* [ ] Mediator Pattern
-* [ ] Memento Pattern
-* [ ] Observer Pattern
-* [ ] State Pattern
-* [ ] Strategy Pattern
-* [ ] Template Method Pattern
-* [ ] Visitor Pattern
+
+- [ ] Chain of Responsibility Pattern
+- [ ] Command Pattern
+- [ ] Interpreter Pattern
+- [ ] Iterator Pattern
+- [ ] Mediator Pattern
+- [ ] Memento Pattern
+- [ ] Observer Pattern
+- [ ] State Pattern
+- [ ] Strategy Pattern
+- [ ] Template Method Pattern
+- [ ] Visitor Pattern
+
 ---
-* [ ] Module Pattern
-* [ ] Revealing Module Pattern
-* [ ] Mix In Pattern
+
+- [ ] Module Pattern
+- [ ] Revealing Module Pattern
+- [ ] Mix In Pattern
+
 ---
-* [ ] MVC
-* [ ] MVPw
-* [ ] MVVM
+
+- [ ] MVC
+- [ ] MVP
+- [ ] MVVM
 
 ## Usage
 
