@@ -30,6 +30,9 @@ const config: DenonConfig = {
     "singleton": {
       cmd: "deno run src/singleton_pattern/example.ts",
     },
+    "adapter": {
+      cmd: "deno run src/adapter_pattern/example.ts",
+    },
   },
 };
 
