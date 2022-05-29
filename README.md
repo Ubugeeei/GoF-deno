@@ -12,7 +12,7 @@
 
 ---
 
-- [ ] Adapter Pattern
+- [x] Adapter Pattern
 - [ ] Bridge Pattern
 - [ ] Composite Pattern
 - [ ] Decorator Pattern
