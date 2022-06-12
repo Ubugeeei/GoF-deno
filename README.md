@@ -29,7 +29,7 @@
 - [ ] Mediator Pattern
 - [ ] Memento Pattern
 - [ ] Observer Pattern
-- [ ] State Pattern
+- [x] State Pattern
 - [ ] Strategy Pattern
 - [ ] Template Method Pattern
 - [ ] Visitor Pattern
