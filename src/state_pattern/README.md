@@ -12,3 +12,6 @@ Context o-- State
 State <|-- ConcreteStateA
 State <|-- ConcreteStateB
 ```
+ConcreteStateA and ConcreteStateB are Singleton.
+State class has methods for changing states.
+
