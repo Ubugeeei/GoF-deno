@@ -8,6 +8,9 @@ Explain state as a class.
 ```mermaid
 classDiagram
 
+class State {
+    <<interface>>
+}
 Context o-- State
 State <|-- ConcreteStateA
 State <|-- ConcreteStateB
