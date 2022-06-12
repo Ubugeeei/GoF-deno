@@ -4,18 +4,32 @@ require consistency without error by preparing a class that specializes in insta
 ```mermaid
 classDiagram
 
-<<interface>> AbstractFactory <|-- ConcreteFactory1
-<<interface>> AbstractFactory <|-- ConcreteFactory2
+class AbstractFactory {
+    <<interface>>
+}
+AbstractFactory <|-- ConcreteFactory1
 
-<<interface>> AbstractProductA <|-- ProductA1
-<<interface>> AbstractProductA <|-- ProductA2
+class AbstractFactory {
+    <<interface>>
+}
+AbstractFactory <|-- ConcreteFactory2
 
-<<interface>> AbstractProductB <|-- ProductB1
+class AbstractProductA {
+    <<interface>>
+}
+AbstractProductA <|-- ProductA1
+AbstractProductA <|-- ProductA2
+
+class AbstractProductB {
+    <<interface>>
+}
+AbstractProductB <|-- ProductB1
 AbstractProductB <|-- ProductB2
 
-<<interface>> ConcreteFactory1 -- ProductA1
-<<interface>> ConcreteFactory1 -- ProductB1
 
-ConcreteFactory2 -- ProductA2
-ConcreteFactory2 -- ProductB2
+ConcreteFactory1 .. ProductA1
+ConcreteFactory1 .. ProductB1
+
+ConcreteFactory2 .. ProductA2
+ConcreteFactory2 .. ProductB2
 ```
