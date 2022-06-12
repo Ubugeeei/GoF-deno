@@ -33,6 +33,9 @@ const config: DenonConfig = {
     "adapter": {
       cmd: "deno run src/adapter_pattern/example.ts",
     },
+    "state": {
+      cmd: "deno run src/state_pattern/example.ts",
+    }
   },
 };
 
