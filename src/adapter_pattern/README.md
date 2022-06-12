@@ -3,7 +3,11 @@ The Adapter Pattern allows changing the interface without modifying existing cla
 
 ```mermaid
 classDiagram
-Client --> Adapter
-Adapter <|..Target
-Adapter <|-- Adaptee
+Client --> Target
+
+class Target {
+    <<interface>>
+}
+Adapter ..|> Target
+Adapter --|> Adaptee
 ```
