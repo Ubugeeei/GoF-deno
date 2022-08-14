@@ -7,3 +7,4 @@ test:
 	deno test ./src/prototype/impl.ts
 	deno test ./src/singleton/impl.ts
 	deno test ./src/state/impl.ts
+	deno test ./src/iterator/impl.ts
