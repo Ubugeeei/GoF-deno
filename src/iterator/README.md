@@ -24,5 +24,4 @@ class ConcreteIterator {
 }
 
 ConcreteAggregate --o ConcreteIterator
-
 ```

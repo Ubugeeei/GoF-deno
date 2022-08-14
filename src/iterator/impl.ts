@@ -43,4 +43,4 @@ Deno.test("iterator", () => {
   assertEquals(it.next(), 4);
   assertEquals(it.next(), 5);
   assertEquals(it.hasNext(), false);
-})
+});
