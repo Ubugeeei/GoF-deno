@@ -64,7 +64,7 @@ $ deno install -qAf --unstable https://deno.land/x/denon/denon.ts
 start sample
 
 ```sh
-$ denon hello
+$ make test
 ```
 
 show scripts.config.ts for running some implements of design pattern example.
