@@ -6,11 +6,11 @@ interface ILogger {
 }
 
 class ProductionLogger implements ILogger {
-  info(_message: string): void { }
+  info(_message: string): void {}
   warn(message: string): void {
     console.warn(message);
   }
-  debug(_message: string): void { }
+  debug(_message: string): void {}
   error(message: string): void {
     console.error(message);
   }

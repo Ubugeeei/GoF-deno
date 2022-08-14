@@ -3,7 +3,6 @@
 ※ Additional implementations as needed
 
 - [x] Abstract Factory Pattern
-- [x] Constructor Pattern
 - [x] Builder Pattern
 - [x] Factory Pattern
 - [x] Factory Method Pattern
