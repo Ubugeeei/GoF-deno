@@ -1,8 +1,8 @@
 {
-	"deno.enable": true,
-	"deno.codeLens.implementations": true,
-	"deno.codeLens.referencesAllFunctions": true,
-	"deno.codeLens.references": true,
-	"deno.lint": true,
-	"deno.path": "/usr/local/bin/deno"
+  "deno.enable": true,
+  "deno.codeLens.implementations": true,
+  "deno.codeLens.referencesAllFunctions": true,
+  "deno.codeLens.references": true,
+  "deno.lint": true,
+  "deno.path": "/usr/local/bin/deno"
 }

@@ -48,14 +48,14 @@
 
 ## Usage
 
-deno installation  
+deno installation\
 https://deno.land/#installation
 
 ```sh
 $ brew install deno
 ```
 
-install denon v2.5.0  
+install denon v2.5.0\
 https://deno.land/x/denon@2.5.0
 
 ```sh
