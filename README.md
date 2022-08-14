@@ -24,7 +24,7 @@
 - [ ] Chain of Responsibility Pattern
 - [ ] Command Pattern
 - [ ] Interpreter Pattern
-- [ ] Iterator Pattern
+- [x] Iterator Pattern
 - [ ] Mediator Pattern
 - [ ] Memento Pattern
 - [ ] Observer Pattern
