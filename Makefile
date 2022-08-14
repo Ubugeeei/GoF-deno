@@ -6,3 +6,4 @@ test:
 	deno test --allow-all ./src/factory_method/impl.ts
 	deno test ./src/prototype/impl.ts
 	deno test ./src/singleton/impl.ts
+	deno test ./src/state/impl.ts
